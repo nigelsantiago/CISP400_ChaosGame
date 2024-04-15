@@ -83,7 +83,7 @@ int main()
 		Draw
 		****************************************
 		*/
-        if (points.size()== 100)
+        if (points.size() % 100 == 0)
 	{
 		window.clear();
 	}
