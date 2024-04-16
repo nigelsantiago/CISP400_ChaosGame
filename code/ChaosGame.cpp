@@ -21,8 +21,20 @@ int main()
     vector<Vector2f> points;
 	int numVertex;
 
+	sf::Text text;
+	sf::Font font;
+	font.loadFromFile("KOMIKAP_.ttf");
+	text.setFont(font);
+	text.setString( "1. Click on three different spots on the screen.\n
+			 2. Then, click a fourth time anywhere in the middle of the inital three points.\n
+			 3. Keep watching to see a pattern form!" );
+	text.setCharacterSize(30);
+	text.setFillColor(sf::Color::Blue);
+	text.setStyle(sf::Text::Bold);
+
 	while (window.isOpen())
 	{
+		window.draw(text);
         /*
 		****************************************
 		Handle the players input
