@@ -33,6 +33,7 @@ int main()
 	while (window.isOpen())
 	{
 		window.draw(text);
+		window.display();
         /*
 		****************************************
 		Handle the players input
