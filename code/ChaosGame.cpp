@@ -34,11 +34,6 @@ int main()
 
 	while (window.isOpen())
 	{
-		window.draw(text);
-		if (toDisplayText)
-		{	
-			window.display();
-		}
         /*
 		****************************************
 		Handle the players input
@@ -68,9 +63,9 @@ int main()
                     {
                         ///fourth click
                         ///push back to points vector
-			window.clear();
-			toDisplayText = false;
-			points.push_back(Vector2f(event.mouseButton.x, event.mouseButton.y));
+			//window.clear();
+                        toDisplayText = false;
+                        points.push_back(Vector2f(event.mouseButton.x, event.mouseButton.y));
                     }
                 }
             }
@@ -102,10 +97,16 @@ int main()
 		Draw
 		****************************************
 		*/
-        if (points.size() % 100 == 0)
-	{
+        //if (points.size() % 100 == 0)
+	//{
 		window.clear();
-	}
+	//}
+
+		if (toDisplayText)
+		{	
+            window.draw(text);
+		}
+
         for(long unsigned int i = 0; i < vertices.size(); i++)
         {
             RectangleShape rect(Vector2f(10,10));
@@ -113,7 +114,7 @@ int main()
             rect.setFillColor(Color::Blue);
             window.draw(rect);
         }
-	for(long unsigned int i = 0; i < points.size(); i++)
+	    for(long unsigned int i = 0; i < points.size(); i++)
         {
             RectangleShape rect(Vector2f(10,10));
             rect.setPosition(Vector2f(points[i].x, points[i].y));
