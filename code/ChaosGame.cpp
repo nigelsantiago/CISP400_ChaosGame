@@ -27,7 +27,7 @@ int main()
 	text.setFont(font);
 	text.setString( "Make four clicks");
 	text.setCharacterSize(85);
-	text.setPosition(1920/2.0f, 1080/4.0f);
+	text.setPosition(1920/4.0f, 1080/4.0f);
 	text.setFillColor(sf::Color::Blue);
 	text.setStyle(sf::Text::Bold);
 
