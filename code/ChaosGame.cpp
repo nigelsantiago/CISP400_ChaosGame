@@ -34,6 +34,7 @@ int main()
 	while (window.isOpen())
 	{
 		window.draw(text);
+		window.display();
         /*
 		****************************************
 		Handle the players input
@@ -84,7 +85,7 @@ int main()
             ///select random vertex
             ///calculate midpoint between random vertex and the last point in the vector
             ///push back the newly generated coord.
-			window.display();
+			
 			numVertex = rand() % 3;
 			points.push_back(Vector2f((vertices.at(numVertex).x + points.at(points.size()-1).x) / 2, 
 					(vertices.at(numVertex).y + points.at(points.size()-1).y) / 2));
