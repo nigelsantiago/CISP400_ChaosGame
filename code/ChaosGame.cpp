@@ -28,7 +28,7 @@ int main()
 	text.setString( "1. Click on three different spots on the screen.\n
 			 2. Then, click a fourth time anywhere in the middle of the inital three points.\n
 			 3. Keep watching to see a pattern form!\n
-			 Click "Enter" to start" );
+			 Click 'Enter' to start" );
 	text.setCharacterSize(30);
 	text.setFillColor(sf::Color::Blue);
 	text.setStyle(sf::Text::Bold);
