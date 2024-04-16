@@ -25,9 +25,9 @@ int main()
 	sf::Font font;
 	font.loadFromFile("fonts/KOMIKAP_.ttf");
 	text.setFont(font);
-	text.setString( "1. Click on three different spots on the screen. 2. Then, click a fourth time anywhere in the middle of the inital three points. 3. Keep watching to see a pattern form! Press the Enter key to start" );
-	text.setCharacterSize(100);
-	text.setPosition(1920/2.0f, 1080/2.0f);
+	text.setString( "Make four clicks");
+	text.setCharacterSize(85);
+	text.setPosition(1920/2.0f, 1080/4.0f);
 	text.setFillColor(sf::Color::Red);
 	text.setStyle(sf::Text::Bold);
 
