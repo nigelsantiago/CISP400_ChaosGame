@@ -23,7 +23,7 @@ int main()
 
 	sf::Text text;
 	sf::Font font;
-	font.loadFromFile("KOMIKAP_.ttf");
+	font.loadFromFile("fonts/KOMIKAP_.ttf");
 	text.setFont(font);
 	text.setString( "1. Click on three different spots on the screen. 2. Then, click a fourth time anywhere in the middle of the inital three points. 3. Keep watching to see a pattern form! Press the Enter key to start" );
 	text.setCharacterSize(100);
