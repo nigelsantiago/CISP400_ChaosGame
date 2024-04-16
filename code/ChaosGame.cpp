@@ -34,8 +34,8 @@ int main()
 	while (window.isOpen())
 	{
 		window.draw(text);
-		window.display();
-		window.clear();
+		//window.display();
+		//window.clear();
         /*
 		****************************************
 		Handle the players input
