@@ -25,11 +25,10 @@ int main()
 	sf::Font font;
 	font.loadFromFile("KOMIKAP_.ttf");
 	text.setFont(font);
-	text.setString( "1. Click on three different spots on the screen." );
-	/* \n
+	text.setString( "1. Click on three different spots on the screen.\n
 			 2. Then, click a fourth time anywhere in the middle of the inital three points.\n
 			 3. Keep watching to see a pattern form!\n
-			 Click Enter to start */
+			 Press the Enter key to start" );
 	text.setCharacterSize(30);
 	text.setFillColor(sf::Color::Blue);
 	text.setStyle(sf::Text::Bold);
